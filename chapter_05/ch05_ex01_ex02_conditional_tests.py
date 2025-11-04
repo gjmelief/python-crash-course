@@ -61,12 +61,12 @@ print(beer != "la chouffe")
 
 # Conditional Test 8. Test using .lower()
 print("\nTest 8")
-car = 'Audi'
+car = "Audi"
 print("Is car == 'Audi'? I predict True.")
-print(car == 'Audi')
+print(car == "Audi")
 
 print("\nIs car.lower() == 'audi'? I predict True")
-print(car.lower() == 'audi')
+print(car.lower() == "audi")
 
 # Conditional Test 9. Numerical tests
 print("\nTest9")
@@ -77,16 +77,16 @@ print(num == 13)
 print("\nIs num != 13? I predict False.")
 print(num != 13)
 
-print("\nIs 14 > 13? I predict True")
+print("\nIs 14 > num? I predict True")
 print(14 > num)
 
-print("\nIs 15 < 13? I predict False.")
+print("\nIs 15 < num? I predict False.")
 print(15 < num)
 
-print("\nIs 13 >= 13? I predict True")
-print( 13 >= num)
+print("\nIs 13 >= num? I predict True")
+print(13 >= num)
 
-print("\nIs 76 <= 13? I predict False")
+print("\nIs 76 <= num? I predict False")
 print(76 <= num)
 
 # Conditional Test 10. Tests using 'and' and 'or'
@@ -101,18 +101,18 @@ print("\nIs 20 > 18 or is 40 < 37? I predict True")
 print(20 > age_0 or 40 < age_1)
 
 # Conditional Test 11. Test whether an item is in a list
-foods = ['pizza', 'fries', 'pancakes', 'pasta']
+foods = ["pizza", "fries", "pancakes", "pasta"]
 print("\nTest 11")
 print("\nIs 'pizza' in foods? I predict True")
-print('pizza' in foods)
+print("pizza" in foods)
 
 print("\nIs 'broccoli' in foods? I predict False")
-print('broccoli' in foods)
+print("broccoli" in foods)
 
 # Conditional Test 12. Test whether an item is not in a list
 print("\nTest 12")
 print("\nIs 'broccoli' not in foods? I predict True")
-print('broccoli' not in foods)
+print("broccoli" not in foods)
 
 print("\nIs 'fries not in foods? I predict False")
-print('fries' not in foods)
+print("fries" not in foods)
