@@ -1,5 +1,5 @@
-# Exercise 6-5 From 'Python Crash Course'
-# 04-11-2025 G. Melief
+# Exercise 6-6 From 'Python Crash Course'
+# 07-11-2025 G. Melief
 
 # Exercise for using loops with dictionaries
 
