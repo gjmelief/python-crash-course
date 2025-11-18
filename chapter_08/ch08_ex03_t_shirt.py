@@ -1,4 +1,4 @@
-# Exercise 8-2 From 'Python Crash Course'
+# Exercise 8-3 From 'Python Crash Course'
 # 18-11-2025 G. Melief
 
 # Exercise defining a function with parameters
@@ -12,4 +12,4 @@ def make_shirt(size, text):
 make_shirt("xl", "i love python")
 
 # Call the function with keyword arguments
-make_shirt(size = "xl", text = "i love python")
+make_shirt(size= "xl", text= "i love python")
