@@ -10,3 +10,6 @@ def make_shirt(size, text):
 
 # Call the function with positional arguments
 make_shirt("xl", "i love python")
+
+# Call the function with keyword arguments
+make_shirt(size = "xl", text = "i love python")
