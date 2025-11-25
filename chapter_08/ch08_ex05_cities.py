@@ -4,7 +4,7 @@
 # Exercise defining a function with default parameters and calling the function
 # with different methods
 
-def describe_city(city_name, country= "the netherlands"):
+def describe_city(city_name, country="the netherlands"):
     """Display information about the country"""
     print(f"{city_name.title()} is in {country.title()}.")
 

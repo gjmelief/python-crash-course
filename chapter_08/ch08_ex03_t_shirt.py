@@ -12,4 +12,4 @@ def make_shirt(size, text):
 make_shirt("xl", "i love python")
 
 # Call the function with keyword arguments
-make_shirt(size= "xl", text= "i love python")
+make_shirt(size="xl", text="i love python")
