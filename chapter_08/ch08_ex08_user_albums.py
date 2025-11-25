@@ -17,7 +17,7 @@ def make_album(artist, album_title):
 
 # Use a while loop to collect album information
 while True:
-    artist = input('Enter the artist name: ')
+    artist = input('\nEnter the artist name: ')
     if artist == 'q':
         break
 
@@ -27,3 +27,5 @@ while True:
 
     album_dict = make_album(artist, album_title)
     print(album_dict)
+
+print('\nGoodbye!')
