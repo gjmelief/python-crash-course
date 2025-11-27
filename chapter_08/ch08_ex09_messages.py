@@ -1,5 +1,5 @@
-# Exercise 8-8 From 'Python Crash Course'
-# 25-11-2025 G. Melief
+# Exercise 8-9 From 'Python Crash Course'
+# 27-11-2025 G. Melief
 
 # Exercise using lists in a function
 
