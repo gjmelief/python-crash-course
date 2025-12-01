@@ -3,14 +3,15 @@
 
 # Exercise using import
 
-def print_models(unprinted_designs, completed_models):
+def print_models(*designs):  # '*' So that there can be multiple arguments
     '''Simulate printing each design, until none are left.
     Move each design to completed_models after printing.
     '''
-    while unprinted_designs:
-        current_design = unprinted_designs.pop()
-        print(f"Printing model: {current_design}")
-        completed_models.append(current_design)
+    completed_models = []
+    for design in designs:
+        print(f"Printing model: {design}")
+        completed_models.append(design)
+    return completed_models  # completed_models wil be returned for use outside function
 
 
 def show_completed_models(completed_models):

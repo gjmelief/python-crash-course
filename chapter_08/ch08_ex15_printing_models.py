@@ -3,14 +3,13 @@
 
 # Exercise using import
 
+# Module locating the program functions
 import ch08_ex15_printing_functions as pf
 
-'''
-Simulate printing each design, until none are left.
-Move each design to completed_models after printing.
-Use print_models(unprinted_designs, completed_models)
-'''
-unprinted_designs = ["test1", "test2"]
-completed_models = []
-pf.print_models(unprinted_designs, completed_models)
-pf.show_completed_models(completed_models)
+# Program simulates printing designs, until none are left.
+# Designs move to results after printing.
+# Use print_models('design1', 'design2', etc)
+# The printed models will be stored in result
+result = pf.print_models('design1', 'design2')
+# Displaying the completed models
+pf.show_completed_models(result)
