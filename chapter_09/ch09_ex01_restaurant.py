@@ -11,12 +11,10 @@ class Restaurant:
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
 
-
     def describe_restaurant(self):
         '''Display the attributes of the restaurant'''
         print(f"\nThe name of the restaurant is {self.restaurant_name.capitalize()}."
                 f"\nThey are serving {self.cuisine_type} food.")
-
 
     def open_restaurant(self):
         '''Display a message stating the restaurant is open'''
