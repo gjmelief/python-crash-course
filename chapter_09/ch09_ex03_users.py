@@ -17,7 +17,7 @@ class User:
     def describe_user(self):
         '''Method for printing information about a user'''
         print(f"\nThe user's name is {self.first_name.capitalize()} "
-            f"{self.last_name.capitalize()}. The user is {self.age} year's old "
+            f"{self.last_name.capitalize()}. The user is {self.age} years old "
             f"and lives in {self.location.title()}")
 
     def greet_user(self):
@@ -28,7 +28,7 @@ class User:
 # Create several instances representing different users
 user0 = User('gert-jan', 'melief', 37, 'the netherlands')
 user1 = User('henk', 'smit', 42, 'germany')
-user2= User('john', 'doe', 54, 'the united kingdom')
+user2 = User('john', 'doe', 54, 'the united kingdom')
 
 # Call both method from the Users class for different users
 user0.describe_user()
