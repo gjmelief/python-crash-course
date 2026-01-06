@@ -24,7 +24,11 @@ class Restaurant:
 
     def set_number_served(self, served):
         '''Method for updating the number_served value'''
-        self.number_served = served
+        if served >= self.number_served:
+            self.number_served = served
+            print(f"Customers served: {restaurant.number_served}")
+        else:
+            print("You can't 'unserve' costumers!")
 
     def increment_number_served(self, served):
         '''Method for updating the number_served value with increment'''
@@ -41,8 +45,7 @@ restaurant.number_served = 8
 print(f"Customers served: {restaurant.number_served}")
 
 # Change the number of customers served with the set_number_served method
-restaurant.set_number_served(15)
-print(f"Customers served: {restaurant.number_served}")
+restaurant.set_number_served(4)
 
 # Change the number of customers served with the set_number_served method
 restaurant.increment_number_served(10)
