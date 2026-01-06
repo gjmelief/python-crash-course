@@ -21,6 +21,11 @@ class Restaurant:
         '''Display a message stating the restaurant is open'''
         print(f"\n{self.restaurant_name.capitalize()} is open")
 
+    def set_number_served(self, served):
+        '''Method for updating the number_served value'''
+        self.number_served = served
+
+
 # Create instance of the Restaurant Class
 restaurant = Restaurant('fallow', 'english')
 
@@ -29,4 +34,8 @@ print(f"Customers served: {restaurant.number_served}")
 
 # Change the number_served value and print again
 restaurant.number_served = 8
+print(f"Customers served: {restaurant.number_served}")
+
+# Change the number of customers served with the set_number_served method
+restaurant.set_number_served(15)
 print(f"Customers served: {restaurant.number_served}")
