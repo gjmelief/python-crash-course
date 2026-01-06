@@ -6,6 +6,7 @@
 class Restaurant:
     '''A class describing information about a restaurant'''
 
+
     def __init__(self, restaurant_name, cuisine_type):
         '''Initialize attributes to describe a restaurant'''
         self.restaurant_name = restaurant_name
@@ -25,6 +26,9 @@ class Restaurant:
         '''Method for updating the number_served value'''
         self.number_served = served
 
+    def increment_number_served(self, served):
+        '''Method for updating the number_served value with increment'''
+        self.number_served += served
 
 # Create instance of the Restaurant Class
 restaurant = Restaurant('fallow', 'english')
@@ -38,4 +42,8 @@ print(f"Customers served: {restaurant.number_served}")
 
 # Change the number of customers served with the set_number_served method
 restaurant.set_number_served(15)
+print(f"Customers served: {restaurant.number_served}")
+
+# Change the number of customers served with the set_number_served method
+restaurant.increment_number_served(10)
 print(f"Customers served: {restaurant.number_served}")
