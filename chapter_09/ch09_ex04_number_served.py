@@ -26,3 +26,7 @@ restaurant = Restaurant('fallow', 'english')
 
 # Print the number of customers served
 print(f"Customers served: {restaurant.number_served}")
+
+# Change the number_served value and print again
+restaurant.number_served = 8
+print(f"Customers served: {restaurant.number_served}")
