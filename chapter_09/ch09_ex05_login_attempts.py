@@ -7,13 +7,13 @@ class User:
     '''A class describing information about a user'''
 
 
-    def __init__(self, first_name, last_name, age, location, login_attempts):
+    def __init__(self, first_name, last_name, age, location):
         '''Initialize attributes to describe a user'''
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
         self.location = location
-        self.login_attempts = login_attempts
+        self.login_attempts = 0
 
     def describe_user(self):
         '''Method for printing information about a user'''
@@ -27,7 +27,7 @@ class User:
               f"How is the weather in {self.location.title()}?")
 
     def increment_login_attempts(self):
-        '''Method for incrementing the login attempt with +1'''
+        '''Method for incrementing the login attempts with +1'''
         self.login_attempts += 1
 
     def reset_login_attempts(self):
@@ -35,10 +35,12 @@ class User:
         self.login_attempts = 0
 
 # Create instance of the User class
-user0 = User('Gert-Jan', 'Melief', 37, 'Spijkenisse', 0)
+user0 = User('Gert-Jan', 'Melief', 37, 'Spijkenisse')
 
 # Testing the increment and reset method's
 print(f"{user0.first_name.capitalize()} has {user0.login_attempts} login attempts")
+user0.increment_login_attempts()
+user0.increment_login_attempts()
 user0.increment_login_attempts()
 print(f"{user0.first_name.capitalize()} has {user0.login_attempts} login attempts")
 user0.reset_login_attempts()
