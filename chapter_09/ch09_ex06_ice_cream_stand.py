@@ -43,6 +43,19 @@ class IceCreamStand(Restaurant):
     def __init__(self, restaurant_name, cuisine_type='Ice Cream Stand'):
         '''Initialize the attributes of the superclass'''
         super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ['vanilla', 'chocolate', 'cookie dough', 'stroopwafel']
 
+    def display_flavors(self):
+        '''
+        Method for describing the flavors in the restaurant
+        '''
+        print(f"Ice Cream Stand {self.restaurant_name.capitalize()} serves the"
+              f"following flavors:")
+        for flavor in self.flavors:
+            print(f"\t{flavor.capitalize()}")
+
+# Create a instance of the Class IceCreamStand
 gelato = IceCreamStand('Gelato')
-gelato.describe_restaurant()
+
+# Call the display_flavors method
+gelato.display_flavors()
