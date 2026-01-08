@@ -40,9 +40,9 @@ class IceCreamStand(Restaurant):
     '''
 
 
-    def __init__(self, restaurant_name, cuisine_type='Ice Cream Stand'):
+    def __init__(self, restaurant_name):
         '''Initialize the attributes of the superclass'''
-        super().__init__(restaurant_name, cuisine_type)
+        super().__init__(restaurant_name, 'Ice Cream Stand')
         self.flavors = ['vanilla', 'chocolate', 'cookie dough', 'stroopwafel']
 
     def display_flavors(self):
