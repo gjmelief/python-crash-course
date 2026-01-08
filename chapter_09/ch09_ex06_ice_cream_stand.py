@@ -49,7 +49,7 @@ class IceCreamStand(Restaurant):
         '''
         Method for describing the flavors in the restaurant
         '''
-        print(f"Ice Cream Stand {self.restaurant_name.capitalize()} serves the"
+        print(f"Ice Cream Stand {self.restaurant_name.capitalize()} serves the "
               f"following flavors:")
         for flavor in self.flavors:
             print(f"\t{flavor.capitalize()}")
