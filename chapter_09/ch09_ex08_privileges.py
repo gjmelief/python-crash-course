@@ -1,7 +1,7 @@
 # Exercise 9-8 From 'Python Crash Course'
 # 08-01-2026 G. Melief
 
-# Exercise creating a subclass. Using the class from exercise 9-5
+# Exercise using method chaining. Using the class from exercise 9-7
 
 class User:
     '''A class describing information about a user'''
