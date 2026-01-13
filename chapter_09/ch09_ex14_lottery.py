@@ -15,11 +15,13 @@ for i in range(5):
     sequence.append(letter)
 
 # Randomly select 4 characters from the sequence
-char_1 = choice(sequence)
-char_2 = choice(sequence)
-char_3 = choice(sequence)
-char_4 = choice(sequence)
+winning_ticket = []
+while len(winning_ticket) < 4:
+    pulled_item = choice(sequence)
+
+    if pulled_item not in winning_ticket:
+        print(f"We pulled {pulled_item}!")
+        winning_ticket.append(pulled_item)
 
 # Print statement declaring the winning lottery numbers
-winning_ticket = f"{char_1}{char_2}{char_3}{char_4}"
 print(f"The winning lottery ticket is {winning_ticket}!")
