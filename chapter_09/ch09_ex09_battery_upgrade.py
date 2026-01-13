@@ -74,5 +74,8 @@ class ElectricCar(Car):
         """
         super().__init__(make, model, year)
 
-test_upgrade = Battery
+test_upgrade = Battery()
 print(test_upgrade.battery_size)
+test_upgrade.get_range()
+test_upgrade.upgrade_battery()
+test_upgrade.get_range()
