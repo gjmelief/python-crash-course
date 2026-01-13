@@ -58,10 +58,11 @@ class Battery:
 
     def upgrade_battery(self):
         """Upgrade battery size to 65 if it isn't already"""
-        if self.battery_size >= 65:
-            self.battery_size = self.battery_size
-        else:
+        if self.battery_size < 65:
             self.battery_size = 65
+            print("Upgraded the battery to 65 kWh")
+        else:
+            print("The battery is already 65 kWh")
 
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
@@ -78,5 +79,6 @@ class ElectricCar(Car):
 # Make instance of ElectricCar. Upgrade battery size
 ev1 = ElectricCar('Tesla', 'Model 3', 2021)
 ev1.battery.get_range()
+print("\nUpgrade the battery when size is smaller then 65 kWh")
 ev1.battery.upgrade_battery()
 ev1.battery.get_range()
