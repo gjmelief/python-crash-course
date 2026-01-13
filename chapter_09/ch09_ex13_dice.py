@@ -20,6 +20,18 @@ class Die:
 
 # Make a 6-sided dice and roll it 10 times
 dice_6 = Die()
-print(f"The dice you're playing with has {dice_6.sides} sides.")
+print(f"\nThe dice you're playing with has {dice_6.sides} sides.")
 for rolls in range(10):
     dice_6.roll_dice()
+
+# Make a 10-sided dice and roll it 10 times
+dice_10 = Die(10)
+print(f"\nThe dice you're playing with has {dice_10.sides} sides.")
+for rolls in range(10):
+    dice_10.roll_dice()
+
+# Make a 20-sided dice and roll it 10 times
+dice_20 = Die(20)
+print(f"\nThe dice you're playing with has {dice_20.sides} sides.")
+for rolls in range(10):
+    dice_20.roll_dice()
