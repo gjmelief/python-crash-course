@@ -10,12 +10,16 @@ class Die:
 
 
     def __init__(self, sides=6):
-        """Initilize dice attributes"""
+        """Initialize dice attributes"""
         self.sides = sides
 
     def roll_dice(self):
         """Print a random number between 1 and the number of sides the dice has"""
-        print(randint(1, self.sides))
+        roll = randint(1, self.sides)
+        print(f"\tYou rolled {roll}!")
 
+# Make a 6-sided dice and roll it 10 times
 dice_6 = Die()
-dice_6.roll_dice()
+print(f"The dice you're playing with has {dice_6.sides} sides.")
+for rolls in range(10):
+    dice_6.roll_dice()
