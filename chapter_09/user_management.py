@@ -1,6 +1,7 @@
 """A set of classes representing user roles and their privileges"""
 
 from user import User
+
 class Privileges:
     '''
     Create subclass from the Admin Class
