@@ -73,9 +73,10 @@ class ElectricCar(Car):
         Then initialize attributes specific to an electric car.
         """
         super().__init__(make, model, year)
+        self.battery = Battery()
 
-test_upgrade = Battery()
-print(test_upgrade.battery_size)
-test_upgrade.get_range()
-test_upgrade.upgrade_battery()
-test_upgrade.get_range()
+# Make instance of ElectricCar. Upgrade battery size
+ev1 = ElectricCar('Tesla', 'Model 3', 2021)
+ev1.battery.get_range()
+ev1.battery.upgrade_battery()
+ev1.battery.get_range()
