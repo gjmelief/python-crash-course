@@ -1,4 +1,4 @@
-# Exercise 9-14 From 'Python Crash Course'
+# Exercise 9-15 From 'Python Crash Course'
 # 14-01-2026 G. Melief
 
 # Exercise simulating how much iterations before a lottery ticket is won
@@ -33,7 +33,10 @@ winning_ticket = []
 loop_runs = 0 # Counter for amount of loop runs
 while len(winning_ticket) < 4:
     pulled_item = choice(sequence)
+    loop_runs += 1
 
     if pulled_item in my_ticket:
         winning_ticket.append(pulled_item)
         print(f"{pulled_item} is in your ticket!")
+
+print(f"It took only {loop_runs} pulls")
