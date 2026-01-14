@@ -28,15 +28,24 @@ while len(my_ticket) < 4:
 # Print statement declaring the winning lottery numbers
 print(f"My lottery ticket is {my_ticket}!")
 
+# Save original sequence
+original_sequence = sequence[:]
+
 # Pull numbers until my_ticket is winning
 winning_ticket = []
-loop_runs = 0 # Counter for amount of loop runs
-while len(winning_ticket) < 4:
-    pulled_item = choice(sequence)
+# Counter for amount of loop runs
+loop_runs = 0
+# Logic for pulling numbers and comparing to my_ticket
+while winning_ticket != my_ticket:
     loop_runs += 1
+    while len(winning_ticket) < len(my_ticket):
+        pulled_item = choice(sequence)
+        if pulled_item not in winning_ticket:
+            winning_ticket.append(pulled_item)
+    print(f"The winning ticket is {winning_ticket}!")
 
-    if pulled_item in my_ticket:
-        winning_ticket.append(pulled_item)
-        print(f"{pulled_item} is in your ticket!")
+    if len(winning_ticket) == 4 and winning_ticket != my_ticket:
+        winning_ticket = []
+        sequence = original_sequence[:]
 
 print(f"It took only {loop_runs} pulls")
