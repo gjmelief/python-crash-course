@@ -7,7 +7,7 @@ from pathlib import Path
 
 path = Path('chapter_10/learning_python.txt') # Point path to file location
 contents = path.read_text() # Read the content of the file
-lines = contents.splitlines() # Return echt line in a list
+lines = contents.splitlines() # Return each line in a list
 
 print("Print the contents of learning_python.txt in one string")
 print(contents)
