@@ -1,0 +1,5 @@
+In Python you can reuse code with functions.
+In Python you can import text files.
+In Python you can store classes in modules.
+In Python you can take user input.
+In Python you can make objects from classes.
