@@ -1,4 +1,4 @@
-# Exercise 10-2 From 'Python Crash Course'
+# Exercise 10-3 From 'Python Crash Course'
 # 21-01-2026 G. Melief
 
 # Exercise making code simpler
