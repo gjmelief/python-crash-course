@@ -6,11 +6,14 @@
 from pathlib import Path
 
 path = Path('chapter_10/guest_book.txt')
+guests = []
 while True:
     print("---Welcome Guest!---")
-    guest = input("Please state your full name: \n"
+    new_guest = input("Please state your full name: \n"
                   "Enter 'quit' to stop\n")
-    if guest == "quit":
+    if new_guest == "quit":
         break
-    else:
-        path.write_text(guest)
+    guests.append(new_guest)
+
+guest_str = "\n".join(guests)
+path.write_text(guest_str)
