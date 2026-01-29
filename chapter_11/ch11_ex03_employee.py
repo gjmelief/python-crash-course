@@ -15,10 +15,4 @@ class Employee:
 
     def give_raise(self, salary_raise=5000):
         """Give the employee a raise"""
-        print(f"{self.first_name.title()} salary is €{self.salary}.")
         self.salary += salary_raise
-        print(f"{self.first_name.title()} get's a raise of €{salary_raise}!"
-              f"\n{self.first_name.title()} has now a salary of {self.salary}!")
-
-worker_0 = Employee('gert-jan', 'melief', 50000)
-worker_0.give_raise()
